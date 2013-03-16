@@ -1,0 +1,28 @@
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+<script type='text/javascript'>
+(function(a){function h(){g||(g=!0,d?(b.find("a").hide(),b.find("img").show(),a.ajax(d,{dataType:"html"}).done(function(c){var c=a("<div></div>").append(c.replace(j,"")),e=c.find("a.blog-pager-older-link");e?d=e.attr("href"):(d="",b.hide());c=c.find(i).children();a(i).append(c);window._gaq&&window._gaq.push(["_trackPageview",d]);window.gapi&&window.gapi.plusone&&window.gapi.plusone.go&&window.gapi.plusone.go();window.disqus_shortname&&a.getScript("http://"+window.disqus_shortname+".disqus.com/blogger_index.js");
+window.FB&&window.FB.XFBML&&window.FB.XFBML.parse&&window.FB.XFBML.parse();b.find("img").hide();b.find("a").show();g=!1})):b.hide())}function k(){var a=Math.max(f.height(),l.height(),document.documentElement.clientHeight),b=f.scrollTop()+f.height();0>a-b&&h()}var d="",b=null,i="div.blog-posts",g=!1,f=a(window),l=a(document),j=/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;a(document).ready(function(){if("item"!=_WidgetManager._GetAllData().blog.pageType&&(d=a("a.blog-pager-older-link").attr("href"))){var c=
+a('<a href="javascript:;" >Load more posts</a>');c.click(h);var e=a('<img src="https://raw.github.com/techirsh/infinite-scroll-css-styles/master/images/horizontal-loader-white.gif" style="display: none;">');f.scroll(k);b=a('<div class="techirshloader"></div>');b.append(c);b.append(e);b.insertBefore(a("#blog-pager"));a("#blog-pager").hide()}})})(jQuery);
+</script>
+<!-- infinite scroll style by www.techirsh.com -->
+<style>
+.techirshloader a{text-decoration:none;display:block;width:100%;color:#FFFFFF;}
+.techirshloader{
+border:1px solid #7d99ca;-webkit-box-shadow: #B4B5B5 1px 1px 1px  ;-moz-box-shadow: #B4B5B5 1px 1px 1px ; box-shadow: #B4B5B5 1px 1px 1px  ; -webkit-border-radius: 4px; -moz-border-radius: 4px;border-radius: 4px;font-family:arial, helvetica, sans-serif; padding: 8px 8px 8px 8px; text-shadow: 2px 2px 0 rgba(0,0,0,0.3);font-weight:bold; text-align: center; color: #FFFFFF; background-color: #a5b8da;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#a5b8da), to(#7089b3));
+ background-image: -webkit-linear-gradient(top, #a5b8da, #7089b3);
+ background-image: -moz-linear-gradient(top, #a5b8da, #7089b3);
+ background-image: -ms-linear-gradient(top, #a5b8da, #7089b3);
+ background-image: -o-linear-gradient(top, #a5b8da, #7089b3);
+ background-image: linear-gradient(to bottom, #a5b8da, #7089b3);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#a5b8da, endColorstr=#7089b3);
+}
+.techirshloader:hover{
+ border:1px solid #5d7fbc; background-color: #819bcb;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#819bcb), top(#536f9d));
+ background-image: -webkit-linear-gradient(top, #819bcb, #536f9d);
+ background-image: -moz-linear-gradient(top, #819bcb, #536f9d);
+ background-image: -ms-linear-gradient(top, #819bcb, #536f9d);
+ background-image: -o-linear-gradient(top, #819bcb, #536f9d);
+ background-image: linear-gradient(to bottom, #819bcb, #536f9d);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#819bcb, endColorstr=#536f9d);
+}
+</style>
